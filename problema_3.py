@@ -9,18 +9,21 @@
 N = 1 => 1
 N = 2 => -1 (inválido: média nunca vai estar na linha / coluna)
 
-N = impar => basta inserir os valores de forma crescente na matriz. 
+N = impar => basta inserir os valores de forma crescente na matriz.
 A média sempre será o valor do meio (para linha e coluna)
 
 RESOLUÇÃO PARA N PAR, MAIOR QUE 2:
 -> Rebalancear o último número de cada linha até que a média da soma da linha seja encontrada na mesma linha
 -> Com os 2 exemplos: Para N=4, o último da linha = penúltimo + (N-1). Com N=6, penúltimo + (N-2)...
 -> Rebalancear o primeiro número da última linha até que a média da soma da coluna seja encontrada na mesma
--> Após rebalancear, os números seguintes continuam em ordem crescente (soma-se 1) 
+-> Após rebalancear, os números seguintes continuam em ordem crescente (soma-se 1)
 
 => O rebalanceamento sempre será na ultima linha e na última coluna
 ============ RESPOSTA ============
+"""
 
+
+"""
 ============ INÍCIO RESOLUÇÃO ============
 
 3 <= N <= 40
@@ -88,24 +91,7 @@ Quando N é impar, não precisar rebalancear e a média sempre será o valor do 
 """
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 """
-
 Um quadrado fantástico é um conjunto de números inteiros positivos dispostos em N linhas por N colunas, tal que: • Não há números repetidos no quadrado. • A média dos números em cada linha é um número inteiro que está presente na linha. • A média dos números em cada coluna é um número inteiro que está presente na coluna.
 
 Entrada
@@ -121,12 +107,8 @@ Restrições • 1 ≤ N ≤ 40 • 1 ≤ Xi ≤ 1000000
 Informações sobre a pontuação • Para um conjunto de casos de testes valendo 44 pontos, 1 ≤ N é ímpar. • Para outro conjunto de casos de testes valendo 56 pontos, nenhuma restrição adicional.
 
 Exemplo de entrada
-
 1
 
 Exemplo de saída
-
 1
-
 """
-
