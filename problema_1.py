@@ -26,7 +26,7 @@ peso_total = sum(pi)  # Armazena a soma dos pesos
 
 media_peso = peso_total / len(pi)  # Armazenar a média dos pesos dos camelos
 
-for i, p in enumerate(
+for _, p in enumerate(
     pi
 ):  # Percorrer a lista e fazer comparações entre o peso de um camelo e a média de todos
     if p > media_peso:

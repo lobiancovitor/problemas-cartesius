@@ -19,7 +19,7 @@ def sum_digits(n: int) -> int:
 
 def search_seven(n: int) -> bool:
     """Checa se n possui todos algarismos iguais a 7"""
-    for i, v in enumerate(str(n)):
+    for _, v in enumerate(str(n)):
         if v != "7":
             return False
     return True
