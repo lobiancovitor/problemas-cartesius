@@ -1,12 +1,9 @@
 # Data: 20/05/2024
 # Inicio: 10:33
 # Fim: 10:51
+# Revisões: 1
 
 # Enunciado no fim do arquivo
-
-start = "777"  # Começar com o menor número possível com algarismos 7
-
-# start é uma string para que possamos adicionar mais 7 conforme necessário
 
 mult = 33
 
@@ -18,17 +15,25 @@ def sum_digits(n: int) -> int:
     return soma
 
 
+def search_seven(n: int) -> bool:
+    """Checa se n possui todos algarismos iguais a 7"""
+    for i, v in enumerate(str(n)):
+        if v != "7":
+            return False
+    return True
+
+
 # número satisfatório = o menor número inteiro positivo que multiplicado por 33 resulta em um número cujos algarismos são todos iguais a 7
 
-while True:  # Enquanto não achar um número satisfatório
-    n = int(start) % mult
-    if isinstance(n, int):  # Deve ser um valor inteiro
-        print(
-            sum_digits(n)
-        )  # Printa a soma dos algarismos do primeiro número satisfatório
+i = 1
+# Atualmente -> O(N²)
+while True:
+    m = mult * i
+    if search_seven(m):  # Multiplicando 33 por i até achar um i com todos algarismos 7
+        print(sum_digits(i))  # Printando a soma dos algarismos de i
         break
     else:
-        start + "7"  # Concatenar 7 em start conforme necessário
+        i += 1
 
 
 """
