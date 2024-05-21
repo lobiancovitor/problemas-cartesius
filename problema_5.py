@@ -3,6 +3,8 @@
 # Fim: 10:51
 # Revisões: 1
 
+# Eu tinha feito divindo por mult=33 ao invés de multiplicar para achar o número
+
 # Enunciado no fim do arquivo
 
 mult = 33
@@ -26,7 +28,7 @@ def search_seven(n: int) -> bool:
 # número satisfatório = o menor número inteiro positivo que multiplicado por 33 resulta em um número cujos algarismos são todos iguais a 7
 
 i = 1
-# Atualmente -> O(N²)
+# Atualmente -> O(N²) -> Melhorar
 while True:
     m = mult * i
     if search_seven(m):  # Multiplicando 33 por i até achar um i com todos algarismos 7
